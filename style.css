@@ -10,6 +10,13 @@
     color: #D9EBF2;
 }
 
+.section { 
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+}
+
 h1 {
     color:#87DDFE;
 }
@@ -22,6 +29,11 @@ h2  {
     font-size: 50px;
     font-weight: 100;
 }
+
+h3{
+    text-align: center;
+}
+
 /*HEADER*/
 
 header{
@@ -55,7 +67,7 @@ header{
   content: '';
   position: absolute;
   width: 100px;
-  background-image: linear-gradient(180deg, #87DDFE, rgb(255, 48, 255));
+  background-image: linear-gradient(180deg, #87DDFE, #87DDFE);
   height: 130%;
   animation: rotBGimg 3s linear infinite;
   transition: all 0.2s linear;
@@ -141,6 +153,10 @@ justify-content:center;}
     padding-bottom: 10px;
 }
 
+.padding-bot-50{
+    padding-bottom: 50px;
+}
+
 .padding-top-60{
 padding-top: 60px;
 }
@@ -165,6 +181,9 @@ padding-top: 60px;
     margin-left: 540px;
 }
 
+.petit-margin-left{
+    margin-left: 100px;
+}
 .margin-right{
     margin-right: 30px;
 }
@@ -240,7 +259,7 @@ margin-right: auto;
   margin: 1em auto 2em;
   border: 2px solid #87DDFE;
   overflow: hidden;                     /* masque tout ce qui dépasse */
-  box-shadow: 0 .25em .5em #CCC,inset 0 0 1em .25em #CCC;
+  box-shadow: 0 .2àem .5em #CCC,inset 0 0 1em .20em #CCC;
 }
 
 .marquee-rtl > :first-child {
@@ -267,4 +286,125 @@ margin-right: auto;
 
 .bonjour{
     margin-left: 450px;
+}
+
+/*SECTION A PROPOS*/
+
+.slice {
+  --c1: #202020;
+  --c2: #00a1b7;
+  --size-letter: 32px;
+  padding: 0.5em 1em;
+  font-size: var(--size-letter);
+
+  background-color: transparent;
+  border: calc(var(--size-letter) / 6) solid var(--c2);
+  border-radius: 0.2em;
+  cursor: pointer;
+
+  overflow: hidden;
+  position: relative;
+  transition: 300ms cubic-bezier(0.83, 0, 0.17, 1);
+
+  & > .text {
+    font-weight: 700;
+    color: var(--c2);
+    position: relative;
+    z-index: 1;
+    transition: color 700ms cubic-bezier(0.83, 0, 0.17, 1);
+  }
+}
+
+.slice::after {
+  content: "";
+
+  width: 0;
+  height: calc(300% + 1em);
+
+  position: absolute;
+  translate: -50% -50%;
+  inset: 50%;
+  rotate: 30deg;
+
+  background-color: var(--c2);
+  transition: 1000ms cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+.slice:hover {
+  & > .text {
+    color: var(--c1);
+  }
+  &::after {
+    width: calc(120% + 1em);
+  }
+}
+
+.slice:active {
+  scale: 0.98;
+  filter: brightness(0.9);
+}
+
+
+/*SECTION EXPERIENCES*/
+
+.card-exp {
+ width: 1000px;
+ height: 100px;
+ background: linear-gradient(135deg, #0D1418 0%, #1E4860 100%);
+ border-radius: 7px;
+}
+
+.cercle{
+    background-color: white;
+    border-radius: 1000px;
+    width: 130px;
+    height:90px;
+    margin-right: 500px;
+}
+/*COMPETENCES*/
+
+.cadre-comp{
+    width: 300px;
+    height: 250px;
+    background: linear-gradient(135deg, #D9EBF2 0%, #1E4860 100%);
+    border-radius: 10px;
+}
+
+img{
+    width: 25%;
+}
+
+.bg-comp{
+    background: linear-gradient(135deg, #D9EBF2 0%, #1E4860 100%);
+}
+
+.police2{
+    color: #07182E;
+}
+
+/*FOOTER*/
+
+i{
+    font-size: 50px;
+    color: #07182E;
+    background-color: #ffffff;
+}
+
+a{
+    font-size: 12px;
+    color:#07182E ;
+}
+
+.cadre-icone{
+    background-color: white;
+    width: 150px;
+    height: 60px;
+    border-radius: 5px;
+    align-content: center;
+}
+
+.police{
+    font-size:20px;
+    color: #07182E;
+    background-color: white;
 }

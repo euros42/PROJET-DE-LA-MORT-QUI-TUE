@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <style>
@@ -16,7 +20,7 @@
     <main>
         <header class="flex padding">
             <div class="card margin-right">
-                <img src="logo.png" class="logo"> <!-- LE LOGO EST A MODIFIER -->
+                <img src="logo hi how are you.png" class="logo"> <!-- LE LOGO EST A MODIFIER -->
             </div>
             <div class="justify-center">
                 <nav>
@@ -32,11 +36,10 @@
 
 
         </header>
-        <section>
+        <section> <!-- Section HERO avec nom prénom et defilement-->
             <div class="bonjour">
                 <h1>Bonjour, je suis Adélie Perez, développeuse web junior</h1>
             </div>
-            <!-- Section HERO avec nom prénom et defilement-->
             <div class="marquee-rtl">
                 <div>Développement web - HTML - CSS - Javascript - Numérique - UX/UI design
                 </div>
@@ -50,19 +53,19 @@
 
         <section>
             <h2>A propos</h2>
-            <div class="flex space-evenly">
-                <div class="container-1000">
+            <div class="flex space-evenly section">
+                <div class="">
                     <p>ADELIE PEREZ
                         📍 Saint-Etienne • Em-lyon business school</p>
 
-                    <p class="">Me contacter</p> <!-- BOUTON LIGHT CLAIR-->
+                    <span class="slice">Me contacter</span> <!-- BOUTON LIGHT CLAIR-->
                 </div>
 
-                <div class="container-1000">
+                <div class="">
                     <p>Passionnée par l’informatique, je mêle ma passion pour l’art à la programmation pour rendre vie à
                         mes projets !</p>
 
-                    <p class="">Voir mes compétences</p> <!-- BOUTON FILL CLAIR -->
+                    <span class="slice">Voir mes compétences</span> <!-- BOUTON FILL CLAIR -->
                 </div>
             </div>
 
@@ -72,79 +75,145 @@
         <!-- SECTION EXPERIENCES -->
         <section> <!-- PENSER A NE PAS FLEX PTDR -->
             <h2>Experiences</h2>
-            <div>
-                <p>Présent</p>
+            <div class="section">
+                <div class="align-center">
 
-                <p>
+                    <p>Présent</p>
+                    <p class="card-exp align-center"><!-- CADRE EXPERIENCE -->
+                        Formation numérique La toile EM-LYON Business school Saint-étienne
+                    </p>
+                </div>
+                <div class="align-center">
 
-                </p><!-- CADRE EXPERIENCE -->
+                    <p>2024-2025</p>
+                    <p class="card-exp align-center">1ère année Licence de Mathématiques Université Jean Monnet et
+                        formation technicienne systèmes et
+                        réseaux</p><!-- CADRE EXPERIENCE -->
+                </div>
+                <div class="align-center">
 
-            </div>
+                    <p>2023-2024</p>
+                    <p class="card-exp align-center">Classe préparatoire aux concours des grandes écoles d’art ESADSE
+                    </p>
+                    <!-- CADRE EXPERIENCE -->
+                </div>
+                <div class="align-center">
 
-
-            <div>
-                <p>2024-2025</p>
-                <p></p><!-- CADRE EXPERIENCE -->
-            </div>
-            <div>
-                <p>2023-2024</p>
-                <p></p><!-- CADRE EXPERIENCE -->
-            </div>
-            <div>
-                <p>2022-2023</p>
-                <p></p><!-- CADRE EXPERIENCE -->
+                    <p>2022-2023</p>
+                    <p class="card-exp align-center">Baccalauréat général lycée Albert Camus Firminy spécialité Théâtre
+                        LLCE Anglais</p>
+                    <!-- CADRE EXPERIENCE -->
+                </div>
             </div>
 
         </section>
 
         <!-- SECTION 2 COMPETENCES -->
-        <section>
+        <section class="section">
             <h2>Competences</h2>
-            <p>Programmation et design</p>
-            <div>
+            <h3>Programmation et design</h3>
+            <div class="flex">
                 <div>
-                    <h4></h4>
-                    <p></p>
-                </div>
-                <div>
-                    <h4></h4>
-                    <p></p>
-                </div>
-                <div>
-                    <h4></h4>
-                    <p></p>
-                </div>
-                <div>
-                    <h4></h4>
-                    <p></p>
-                </div>
-            </div>
-            <p>Compétences transversales</p>
-            <div>
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <h4></h4>
-                <p></p>
+                    <div class="cadre-comp">
+                        <img src="figma_logo_icon_147289.png">
+                        <div class="bg-comp police2">
+                            <h4>Ux/Ui design débutant</h4>
+                            <p>Prototypage d’application et maquette de site web via Figma</p>
+                        </div>
 
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    </div>
+                    <div class="cadre-comp">
+                        <img src="Code - HTML 5 en CSS 3.jpg">
+                        <div class="bg-comp police2">
+                            <h4>Codage HTML/CSS</h4>
+                            <p>Codage de site web grâce aux langages HTML et CSS niveau débutant</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="cadre-comp">
+                        <img src="I Will Write Javascript, Html, Css, Php, Jquery Code For You.jpg">
+                        <div class="bg-comp police2">
+                            <h4>Codage HTML/CSS/JAVASCRIPT</h4>
+                            <p>Codage de site web grâce aux langages HTML, CSS et Javascript niveau débutant</p>
+                        </div>
+
+                    </div>
+
+                    <div class="cadre-comp">
+                        <img src="python logo.jpg">
+                        <div class="bg-comp police2">
+                            <h4>Codage Python</h4>
+                            <p>Codage de quelques programmes en langage Python débutant</p>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
+                <h3>Compétences transversales</h3>
+                <div class="flex">
+                    <div>
+                        <div>
+                            <p>Gestion de projet</p>
+                        </div>
+                        <div>
+                            <p>Créativité</p>
+                        </div>
+                        <div>
+                            <p>Anglais</p>
+                        </div>
+                    </div>
+
+
+
+                    <div>
+                        <div>
+                            <p>Travail d’équipe</p>
+                        </div>
+                        <div>
+                            <p>Empathie</p>
+                        </div>
+                        <div>
+                            <p>Rigueur</p>
+                        </div>
+                    </div>
+                </div>
 
         </section>
         <!-- FIN SECTION COMPETENCES -->
 
         <!-- FIN MAIN -->
     </main>
-    
+
     <!-- FOOTER CONTACT -->
     <footer>
         <h2>Contact</h2>
+        <div class="flex space-evenly padding-top-100"><!-- Bouton -->
+
+            <div class="cadre-icone flex space-evenly">
+                <a href="" class="police align-center">
+                    <i class="ph ph-github-logo cadre-icone"></i>Github</a>
+            </div>
+
+
+            <!-- Bouton -->
+            <div class="cadre-icone flex space-evenly">
+
+                <a href="mailto:perezadelie42@gmail.com" class="police align-center">
+                    <i class="ph-fill ph-envelope-simple cadre-icone"></i>
+                    Mail</a>
+                <!-- faire un mailto -->
+            </div>
+
+
+            <!-- Bouton -->
+            <div class="cadre-icone flex space-evenly">
+                <a href="" class="police align-center">
+                    <i class="ph-fill ph-linkedin-logo "></i>Linkedin</a>
+            </div>
+
+        </div>
+        <p class="align-center padding-top-60 padding-bot-50">© 2026 Adélie Perez. Tous droits réservés.</p>
     </footer>
 </body>
 
